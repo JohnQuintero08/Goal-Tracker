@@ -7,10 +7,10 @@ const containerStyle = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    height: "80%",
+    height: "100%",
     borderRadius: "20px",
     maxWidth: "190px",
-    flex: "1",
+    flex: "1", 
     padding: "1rem"
 }
 const headerCard = {
@@ -38,11 +38,28 @@ const textStyle = {
     display: "flex",
     alignItems: "center",
     width: "100%",
-    height: "40px",
+    height: "45px",
     borderRadius: "10px",
-    padding: "1rem"
+    padding: "1rem",
+    overflow: "hidden"
 }
-const GoalCard = ({title, task, id})=>{
+const arrayStyle = {
+    display: "flex",
+    flexDirection: "column",
+    gap: "0.3rem"
+}
+const GoalCard = ({title, listOfTasks, id})=>{
+    const newList = listOfTasks.filter(elem => {
+        return elem.isDone === false
+    })
+    const arrayOfTasks = newList.slice(0,2).map((elem, index) => {
+        return (
+            <div style={textStyle} key={index}>
+                <p>{elem.task}</p>
+            </div>
+        )
+    })
+    const noMoreMessage = <div style={textStyle}><p>Nothing more today 🎉</p></div>
     return (
         <div style={containerStyle}>
             <div style={headerCard}>
@@ -52,8 +69,8 @@ const GoalCard = ({title, task, id})=>{
                     to={`myGoals/goal/${id}`}
                 ><BsThreeDots style={{fill: "var(--white)"}}/></Link>
             </div>
-            <div style={textStyle}>
-                <p >{task}</p>
+            <div style={arrayStyle}>
+                {newList.length>0 ? arrayOfTasks : noMoreMessage}
             </div>
         </div>
     )

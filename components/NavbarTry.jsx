@@ -3,8 +3,6 @@ import { Link, NavLink } from "react-router-dom";
 import "../styles/navbarTry.css"
 
 import { FaHouseChimney } from "react-icons/fa6";
-import { GiNetworkBars } from "react-icons/gi";
-import { FaCalendarAlt } from "react-icons/fa";
 import { BsJournalBookmarkFill } from "react-icons/bs";
 import { GoGoal } from "react-icons/go";
 
@@ -15,26 +13,18 @@ const NavbarTry = ()=>{
             <div className="navbar-links">
                 <NavLink 
                     to="/"
+                    className={({ isActive }) =>isActive ? "button-nav-active" : ""}
                 >
                     <FaHouseChimney className="navbar-icon"/>
                     <p>Home</p>
                 </NavLink>
                 <NavLink 
                     to="myGoals"
+                    className={({ isActive }) =>isActive ? "button-nav-active" : ""}
                 >
                     <GoGoal  className="navbar-icon"/>
                     <p>My Goals</p>
                 </NavLink>
-{/*                 <NavLink >
-                    <GiNetworkBars className="navbar-icon"/>
-                    <p>Statistics</p>
-                </NavLink>
-                <NavLink 
-                    to="calendar"
-                >
-                    <FaCalendarAlt className="navbar-icon"/>
-                    <p>Calendar</p>
-                </NavLink> */}
 {/*                 <NavLink >
                     <BsJournalBookmarkFill className="navbar-icon"/>
                     <p>Journal</p>

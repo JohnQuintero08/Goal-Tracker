@@ -92,6 +92,7 @@ const GoalCreator = ()=>{
         })
     }
     function handleClickCreate(){
+        console.log(formData)
         if(formData.myGoal){
             upDateGoals(formData)
             setIsCreated(true)

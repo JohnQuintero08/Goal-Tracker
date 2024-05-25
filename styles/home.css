@@ -16,7 +16,7 @@
 .cont{
     background-color: var(--white);
     border-radius: 20px;
-    height: 100%;
+    height: 100%; 
 }
 .container-today-goals      {grid-area: goal;}
 .container-small-calendar   {grid-area: caln;}

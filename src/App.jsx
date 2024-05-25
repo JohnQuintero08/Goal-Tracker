@@ -7,8 +7,6 @@ import Goal from '../components/Goal'
 import LandingGoal from '../components/LandingGoal'
 import Home from '../pages/Home'
 import MyGoals from '../pages/MyGoals'
-import Calendar from '../pages/Calendar'
-import Statistics from '../pages/Statistics'
 import LogIn from '../pages/LogIn'
 import SignUp from '../pages/SignUp'
 import User from '../pages/User'
@@ -59,7 +57,6 @@ export default function App() {
       })
     }) 
     updatePercentage(goalId)
-    console.log(listOfGoals)
   }
   function updatePercentage(goalId){
     setListOfGoals(prevGoals => {
@@ -71,7 +68,7 @@ export default function App() {
           })
           return {
             ...goal,
-            percentage: (countPercentage/goal.task.length)*100
+            percentage: Math.floor((countPercentage/goal.task.length)*100)
           }
         }
         return goal
@@ -85,8 +82,6 @@ export default function App() {
           <Route path='/' element={<Try />}>
             <Route index element={< Home/>} />
             <Route path='goalCreator' element={< GoalCreator/>}/> 
-            <Route path='calendar' element={< Calendar />}/>
-            <Route path='statistics' element={<Statistics />}/>
             <Route path='myGoals' element={< MyGoals/>}>
               <Route index element={< LandingGoal/>}/>
               <Route path='goal/:id' element={<Goal/>}/>

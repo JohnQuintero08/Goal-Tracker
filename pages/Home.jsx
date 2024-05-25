@@ -16,9 +16,6 @@ const Home = ()=>{
             <div className="cont container-goals-progress">
                 <SmallGoalProgress/>
             </div>
-{/*             <div className="cont container-timeline">
-                <h2> timeline</h2>
-            </div> */}
         </div>
     )
 }

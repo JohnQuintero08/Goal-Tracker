@@ -65,8 +65,8 @@ const LogIn = () => {
                         onChange={handleChange}
                     ></input>
                 </div>
-                demo@goaltracker.com
-                        integlurio32
+{/*                 demo@goaltracker.com
+                        integlurio32 */}
                 <button 
                     className="button-login-home" 
                 >Log In</button>

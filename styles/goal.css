@@ -2,6 +2,18 @@
     width: 100%;
     height: 100%;
 }
+.header-goal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 4px solid var(--green);
+    position:sticky;
+    background-color: var(--white);
+    top: 0px;
+    padding-top: 2rem;
+}
 .container-goal-wrap{
     display: grid;
     padding: 1rem;
@@ -20,7 +32,6 @@
 .date{grid-area: date;}
 .title-goal{
     font-size: 2rem;
-    margin-bottom: 2rem;
 /*     color: var(--blue); */
 }
 .element-goal{

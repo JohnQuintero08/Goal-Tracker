@@ -35,7 +35,7 @@ const Goal = () => {
             if(isDeleted){
                 setTimeout(() => {
                     navigate("../");
-                }, 2000);
+                }, 1000);
             }
         }
     }, [isDeleted, navigate]);
@@ -43,7 +43,7 @@ const Goal = () => {
     if(isDeleted){
         return <GoalFiller icon={<FaRegTrashAlt style={{width: "100px", height: "100px"}}/>}>Goal succesfully deleted</GoalFiller>
     }else{
-        const {id, myGoal, numberTime, unitTime, date, days, task} = fetchDemoData(listOfGoals)[0]
+        const {id, myGoal, numberTime, unitTime, date, days, task, percentage} = fetchDemoData(listOfGoals)[0]
         
         const formatDays = days
             .filter(day => day.dayIsActive === true)
@@ -63,7 +63,10 @@ const Goal = () => {
         })
         return (
             <div className="container-goal">
-                <h3 className="title-goal">{myGoal}</h3>
+                <div className="header-goal">
+                    <h3 className="title-goal">{myGoal}</h3>
+                    <h2>{percentage}%</h2>
+                </div>
                 <div className="container-goal-wrap">
                     <div className="element-goal days">
                         <h4>Commited days</h4>  
