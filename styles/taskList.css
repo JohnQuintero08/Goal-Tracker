@@ -1,0 +1,27 @@
+.container-task-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 0.3rem 0.3rem 0.3rem 0.7rem;
+    cursor: pointer
+}
+.container-task-list button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.container-task-list p{
+    color: var(--blue);
+    font-weight: 400;
+    font-size: 1rem;
+}

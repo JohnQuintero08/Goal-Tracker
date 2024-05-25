@@ -1,0 +1,22 @@
+.container-header{
+/*     border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1rem;
+    
+}
+.button-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--greyClear);
+}
+.header-icon{
+    width: 50%;
+    height: 50%;
+}

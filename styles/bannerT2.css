@@ -1,0 +1,17 @@
+.container-banner-T2{
+    background-color: var(--green);
+    border: none;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    gap: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.container-banner-T2:active{
+    transform: scale(0.95);
+}
+.container-banner-T2 p{
+    color: white;
+    text-align: left;
+}

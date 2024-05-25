@@ -1,0 +1,23 @@
+.button-mini-dash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    text-decoration: none;
+    /* border: 2px solid var(--greyDark); */
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 0.3rem 0.7rem;
+}
+.button-mini-dash p{
+    transform: translateY(1.1px);
+    color: var(--white);
+}
+.button-mini-dash:active{
+    transform: scale(0.95);
+    color: var(--white);
+}
+.arrow-mini-dash{
+    color: var(--white);
+}

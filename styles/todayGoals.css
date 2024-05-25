@@ -1,0 +1,20 @@
+.container-today-goals-inner{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+.container-all-today-goals{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    gap: 20px;
+}
+.header-today-goals-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.header-today-goals-inner h2{
+    margin: 0;
+}

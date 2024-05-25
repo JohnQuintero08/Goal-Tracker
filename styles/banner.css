@@ -1,0 +1,20 @@
+.container-banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--green);
+    padding: 1rem 1rem;
+    border-radius: 20px;
+    gap: 1rem;
+    width: 100%;
+/*     box-shadow: 1px 2px black; */
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+}
+.container-banner:active{
+    transform: scale(0.95);
+}
+.container-banner p{
+    color: var(--white);
+}

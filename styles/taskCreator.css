@@ -1,0 +1,34 @@
+.task{
+    display: flex;
+    flex-direction: column;
+}
+.task button{
+    border: none;
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.task input{
+    width: 87%;
+    padding: 0.7rem;
+}
+.task-inner{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%
+
+}
+.task label{
+    align-self: center;
+}
+.task input:focus{
+    outline: none;
+}
+
