@@ -112,7 +112,7 @@ export const myListOfGoals = [{
         },
         {
             task: 'Set up the Calendar',
-            isDone: false,
+            isDone: true,
             id: 'Itashas4OzBF-XhSV5U89'
         },
         {
@@ -121,7 +121,7 @@ export const myListOfGoals = [{
             id: 'USiavais89asha7sfg-8d'
         },
       ],
-      percentage: 28,
+      percentage: 42,
   },
   {
       id: 'RXOQsj0WTejco4tKB15QC',

@@ -72,9 +72,7 @@ const LogIn = () => {
                 >Log In</button>
             </form>
             <div className="demo">
-{/*                 <h1>You don't need to register now, try a Demo </h1>
-                <button>Demo</button> */}
-                <h1>Don't have an account, you can register here</h1>
+                <h1>Don't have an account,<br/> you can register here</h1>
                 <Link to="../signUp">Sign Up</Link>
             </div>
         </div>

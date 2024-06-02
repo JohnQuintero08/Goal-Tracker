@@ -30,12 +30,12 @@ const Goal = () => {
 
     useEffect(() => {
         if (isInitialMount.current) {
-            isInitialMount.current = false;
+            isInitialMount.current = false
         } else {
             if(isDeleted){
                 setTimeout(() => {
-                    navigate("../");
-                }, 1000);
+                    navigate("../")
+                }, 1000)
             }
         }
     }, [isDeleted, navigate]);
@@ -97,7 +97,7 @@ const Goal = () => {
                     <ButtonGeneral>Edit</ButtonGeneral>
                 </div>
             </div>
-        )
+        ) 
     }
 }
 

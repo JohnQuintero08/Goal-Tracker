@@ -8,8 +8,8 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-        "righ left"
-        "righ left"
+        "righ righ"
+        "left left"
     ;
     gap: 20px;
     padding: 1rem;
@@ -51,4 +51,24 @@
 .banner-goal-link{
     width: 100%;
     text-decoration: none;
+}
+@media (min-width: 760px) {
+/*     .container-my-goals{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "righ left"
+            "righ left"
+        ;
+    } */
+}
+@media (min-width: 950px) {
+    .container-my-goals{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "righ left"
+            "righ left"
+        ;
+    }
 }

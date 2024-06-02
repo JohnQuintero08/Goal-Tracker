@@ -116,7 +116,7 @@ const SignUp = () =>{
                             Sign Up with Google 
                         </button>
 {/*                         demo@goaltracker.com
-                        integlurio32 */}
+                        integlurio32 */} 
                     </div>
             </form>
         </div>

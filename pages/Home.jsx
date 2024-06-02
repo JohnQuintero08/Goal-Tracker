@@ -15,7 +15,7 @@ const Home = ()=>{
             </div>
             <div className="cont container-goals-progress">
                 <SmallGoalProgress/>
-            </div>
+            </div> 
         </div>
     )
 }

@@ -23,8 +23,7 @@ const MyGoals = ()=>{
                 </Banner>
             </Link>
         )
-    })
-
+    }) 
     return(
         <div className="container-my-goals">
             <div className="container-goals-left">
