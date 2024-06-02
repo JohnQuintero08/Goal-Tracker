@@ -117,11 +117,21 @@ export const myListOfGoals = [{
         },
         {
             task: 'Make it responsive',
-            isDone: false,
+            isDone: true,
             id: 'USiavais89asha7sfg-8d'
         },
+        {
+            task: 'Add the sad path',
+            isDone: false,
+            id: 'U342rfis89ashsvkoidjd'
+        },
+        {
+            task: 'Add the 404 page',
+            isDone: false,
+            id: 'sVOIHosp8sfvasduib.se'
+        },
       ],
-      percentage: 42,
+      percentage: 57,
   },
   {
       id: 'RXOQsj0WTejco4tKB15QC',
