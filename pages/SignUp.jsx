@@ -105,7 +105,7 @@ const SignUp = () =>{
                 </div>
                 <div className="other-sign-up">
                         <button >Sign Up</button>
-                        <p>or</p>
+                        {/* <p>or</p>
                         <button className="button-google">
                             <FaGoogle style={{transform: "translateY(3px)",
                                 width: "17px",
@@ -114,7 +114,7 @@ const SignUp = () =>{
                                 fill: "var(--blue)"
                             }}/> 
                             Sign Up with Google 
-                        </button>
+                        </button> */}
 {/*                         demo@goaltracker.com
                         integlurio32 */} 
                     </div>

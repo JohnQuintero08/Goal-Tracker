@@ -94,7 +94,7 @@ const Goal = () => {
                 </div>
                 <div className="container-buttons-end">
                     <ButtonGeneral onClick={handleClick}>Delete</ButtonGeneral>
-                    <ButtonGeneral>Edit</ButtonGeneral>
+                    {/* <ButtonGeneral>Edit</ButtonGeneral> */}
                 </div>
             </div>
         ) 
